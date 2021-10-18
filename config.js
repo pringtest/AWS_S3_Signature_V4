@@ -1,5 +1,5 @@
 module.exports = {
-	SERVICE_NAME: 'iotdevicegateway',
+	SERVICE_NAME: 's3',
     REGION: 'ap-southeast-1',
     SECRET_KEY: '*********',
     ACCESS_KEY: '*********',
