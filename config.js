@@ -1,5 +1,5 @@
 module.exports = {
-	SERVICE_NAME: 's3',
+    SERVICE_NAME: 's3',
     REGION: '*******',
     SECRET_KEY: '*******', 
     ACCESS_KEY: '*******', 
