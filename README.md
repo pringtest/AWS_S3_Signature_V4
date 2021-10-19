@@ -15,19 +15,19 @@ This repo uses open source projects to work properly:
 
 Fill up `REGION`,`SECRET_KEY`,`ACCESS_KEY`,`METHOD` and `END_POINT` in config.js
 
-Install the dependencies and devDependencies.
+- Install the dependencies and devDependencies.
 ```sh
 cd AWS_S3_Signature_V4
 npm install
 ```
 
-Run test.js to execute lambda function in index.js
+- Run test.js to execute lambda function in index.js
 ```sh
 node test.js
 ```
 
-Copy the result as `QUERY_PARAMETER` and change `END_POINT` as in the config.js.
-Ex: Test http request below by using postman for `GET`,`PUT` and `DELETE` methods.
+- Copy the result as `QUERY_PARAMETER` and change `END_POINT` as in the config.js.
+- Ex: Test http request below by using postman for `GET`,`PUT` and `DELETE` methods.
 ```sh
 https://<END_POINT>/example.png?<QUERY_PARAMETER>
 ```
