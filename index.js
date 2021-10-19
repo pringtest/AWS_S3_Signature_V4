@@ -39,7 +39,7 @@ exports.CreateSig4 = async (event, callback) => {
         canonicalQuerystring += `&X-Amz-SignedHeaders=host`;
     
         var canonicalHeaders = `host:${host}\n`;
-        var payloadHash = SigV4Utils_sha256('');
+        var payloadHash = 'UNSIGNED-PAYLOAD';
         var canonicalRequest = `${method}\n${canonicalUri}\n${canonicalQuerystring}\n${canonicalHeaders}\nhost\n${payloadHash}`;
 
         var stringToSign = algorithm + '\n' +  amzdate + '\n' +  credentialScope + '\n' +  SigV4Utils_sha256(canonicalRequest);

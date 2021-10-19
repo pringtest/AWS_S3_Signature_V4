@@ -13,7 +13,7 @@ This repo uses open source projects to work properly:
 - Requires latest [Node.js][node.js] to run.
 - Requires latest [AWS CLI][AWS CLI] to run.
 
-Fill up `SECRET_KEY`,`ACCESS_KEY` and `END_POINT` in config.js
+Fill up `REGION`,`SECRET_KEY`,`ACCESS_KEY`,`METHOD` and `END_POINT` in config.js
 
 Install the dependencies and devDependencies.
 ```sh
@@ -26,6 +26,11 @@ Run test.js to execute lambda function in index.js
 node test.js
 ```
 
+Copy the result as `QUERY_PARAMETER` and change `END_POINT` as in the config.js.
+Ex: Test http request below by using postman for `GET`,`PUT` and `DELETE` methods.
+```sh
+https://<END_POINT>/example.png?<QUERY_PARAMETER>
+```
 
 ## License
 MIT
