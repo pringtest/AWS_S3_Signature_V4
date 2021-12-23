@@ -28,7 +28,7 @@ exports.CreateSig4 = async (event, callback) => {
         var algorithm = 'AWS4-HMAC-SHA256';
         var method = METHOD;
         var canonicalUri = API_PATH;
-        var host = END_POINT; // IoT Core end point
+        var host = END_POINT; // s3 end point
         var expired = EXPIRED; // Ex: 86400
 
         var credentialScope = `${dateStamp}/${region}/${service}/aws4_request`;
